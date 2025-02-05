@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOSS BLASTER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Kaushan+Script&display=swap" rel="stylesheet"> <!-- Anime-themed font -->
+</head>
+<body>
+    <h1 class="title">TOSS BLASTER</h1>
+    <div id="coin"></div>
+    <div id="buttons-container">
+        <button id="flip-button">Flip Coin</button>
+        <button id="customization-button">Customization</button>
+        <button id="more-button">More</button>
+    </div>
+    <div id="more-details" class="hidden">
+        <button id="share-button">Share</button>
+        <button id="about-button">About This App</button>
+        <div id="about-info" class="hidden">
+            <p>TOSS BLASTER is a fun app that lets you simulate a coin toss with custom images for heads and tails.<br>
+            You can even customize the background and add your personal touch.<br>
+            Enjoy the excitement of every flip!</p>
+        </div> <!-- About info section -->
+    </div> <!-- More details section -->
+    <div id="details" class="hidden">
+        <div class="input-group">
+            <label for="heads-image">Upload Heads Image:</label>
+            <input type="file" id="heads-image" accept="image/*">
+        </div>
+        <div class="input-group">
+            <label for="tails-image">Upload Tails Image:</label>
+            <input type="file" id="tails-image" accept="image/*">
+        </div>
+        <div class="input-group">
+            <label for="background-image">Upload Background Image:</label>
+            <input type="file" id="background-image" accept="image/*">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
